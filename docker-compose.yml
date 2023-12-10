@@ -7,6 +7,7 @@ services:
       context: Backend
       dockerfile: ./Dockerfile
     environment:
-      NODE_ENV: production
+      NODE_ENV: development
+      PORT: 5700
     ports:
-      - 5700:5799
+      - 5700:6700
