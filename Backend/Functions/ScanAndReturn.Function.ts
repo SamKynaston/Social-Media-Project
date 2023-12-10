@@ -1,6 +1,6 @@
 import fs from "fs"
 
-export const ScanAndReturn = async (dir) => {
+export const ScanAndReturn = (dir) => {
     const ToReturn = []
 
     const paths = fs.readdirSync(dir, { withFileTypes: true })
