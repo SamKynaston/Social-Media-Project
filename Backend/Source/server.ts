@@ -9,7 +9,7 @@
 const isDev = process.env.NODE_ENV === `development`
 
 //PORT
-const defaultPort = process.env.PORT
+const DefaultPort = process.env.PORT
 
 // IMPORTS
 import express from "express"
@@ -31,7 +31,7 @@ class Server {
         // BUILD APPS FOR ROUTES
         
         // BUILD OPERATOR APP
-        this.listen(app, defaultPort)
+        this.listen(app, DefaultPort)
     }
 
     private listen(app: express.Application, port: string) {
@@ -40,3 +40,5 @@ class Server {
         })
     }
 }
+
+export default new Server()
